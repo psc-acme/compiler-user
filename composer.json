@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/compiler-user",
+    "description": "Package compiler-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\CompilerUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/lock": "^7.0",
+        "ramsey/uuid": "^4.0",
+        "symfony/uid": "^7.0",
+        "symfony/routing": "^7.0",
+        "brick/date-time": "^0.7.1",
+        "nette/utils": "^4.0",
+        "psc-acme/extension-user": "^1.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
